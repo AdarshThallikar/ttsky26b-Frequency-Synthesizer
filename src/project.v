@@ -5,7 +5,8 @@
 
 `default_nettype none
 
-module tt_um_tiny_ctle (
+// DONT FORGET TO EDIT THE TINY TAPEOUT FILES
+module tt_um_quad_freq_synth (
     input  wire       VGND,
     input  wire       VDPWR,    // 1.8v power supply
 //    input  wire       VAPWR,    // 3.3v power supply
@@ -19,5 +20,8 @@ module tt_um_tiny_ctle (
     input  wire       clk,      // clock
     input  wire       rst_n     // reset_n - low to reset
 );
+
+// Add analog verilog stub
+
 
 endmodule

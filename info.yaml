@@ -15,7 +15,7 @@ project:
   uses_3v3: false       # Set to true if your project uses 3.3V (VAPWR) in addition to 1.8V (VDPWR)
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "tt_um_tiny_quadrature_pll"
+  top_module:  "tt_um_quad_freq_synth"
 
   # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
   source_files:        
@@ -25,39 +25,39 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
+  ui[0]: "rst_cnt_n"
+  ui[1]: "mux_select[0]"
+  ui[2]: "mux_select[1]"
+  ui[3]: "mux_select[2]"
+  ui[4]: "rs_nP_nQ_sw"
+  ui[5]: "dac_load"
   ui[6]: ""
   ui[7]: ""
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[0]: "mux out[8]"
+  uo[1]: "mux out[9]"
+  uo[2]: "mux out[10]"
+  uo[3]: "mux out[11]"
+  uo[4]: "mux out[12]"
+  uo[5]: "mux out[13]"
+  uo[6]: "mux out[14]"
+  uo[7]: "mux out[15]"
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
-  uio[2]: ""
-  uio[3]: ""
-  uio[4]: ""
-  uio[5]: ""
-  uio[6]: ""
-  uio[7]: ""
+  uio[0]: "mux out[0]"
+  uio[1]: "mux out[1]"
+  uio[2]: "mux out[2]"
+  uio[3]: "mux out[3]"
+  uio[4]: "mux out[4]"
+  uio[5]: "mux out[5]"
+  uio[6]: "mux out[6]"
+  uio[7]: "mux out[7]"
 
   # Analog pins - make sure to also set "analog_pins" above, else the pins won't be connected
-  ua[0]: ""
-  ua[1]: ""
-  ua[2]: ""
+  ua[0]: "VCont"
+  ua[1]: "VComp_TH"
+  ua[2]: "VBias_Tail_VCO"
   ua[3]: ""
   ua[4]: ""
   ua[5]: ""
